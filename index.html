@@ -1,0 +1,29 @@
+<!doctype html>
+  <html>
+    <head>
+	  <title>object</title>
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+  <body>
+  <script>
+       //5.
+        document.write("<br>");
+        document.write("<br>");
+        document.write("5.using many array in one array changed in filter method");
+		document.write("<br>");
+        document.write("<br>");
+
+        const employeess = [
+            {name:"David Carlson",age:30},
+            {name:"John Cena",age:34},
+            {name:"Mike Sheridan",age:25},
+            {name:"John Carte",age:50}
+        ];
+		
+		let fifthQ = employeess.filter(function(fifth){
+		    return fifth.age>30
+		});
+		document.write(JSON.stringify(fifthQ));
+  </script>
+  </body>
+  </html>
